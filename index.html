@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/app/js/script.js"></script>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="dashboard">
+        <h1 class="visually-hidden">Time tracking dashboard</h1>
+        <div class="wrapper dashboard__card-wrapper">
+          <div class="dashboard__avatar">
+            <div class="dashboard__avatar-wrapper">
+              <img
+                src="/img/image-jeremy.png"
+                alt="headshot photo of Jeremy"
+                class="dashboard__avatar-image"
+              />
+              <h2 class="dashboard__title">
+                <span class="dashboard__title-span">Report for</span
+                ><br />Jeremy Robson
+              </h2>
+            </div>
+            <div class="dashboard__btn-wrapper">
+              <button class="dashboard__btn">Daily</button>
+              <button class="dashboard__btn active">Weekly</button>
+              <button class="dashboard__btn">Monthly</button>
+            </div>
+          </div>
+          <div class="dashboard__timecard">
+            <div class="dashboard__icon work">
+              <img
+                src="/img/icon-work.svg"
+                alt=""
+                class="dashboard__icon-image"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="dashboard__timecard-text">
+              <div class="dashboard__timecard-title">
+                <h3>Work</h3>
+                <button class="dashboard__card-btn" aria-label="More options">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dashboard__timecard-time">
+                <p class="dashboard__timecard-current">32hours</p>
+                <p class="dashboard__timecard-previous">Last Week - 36hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__timecard">
+            <div class="dashboard__icon play">
+              <img
+                src="/img/icon-play.svg"
+                alt=""
+                class="dashboard__icon-image"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="dashboard__timecard-text">
+              <div class="dashboard__timecard-title">
+                <h3>Play</h3>
+                <button class="dashboard__card-btn" aria-label="More options">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dashboard__timecard-time">
+                <p class="dashboard__timecard-current">10hours</p>
+                <p class="dashboard__timecard-previous">Last Week - 36hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__timecard">
+            <div class="dashboard__icon study">
+              <img
+                src="/img/icon-study.svg"
+                alt=""
+                class="dashboard__icon-image"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="dashboard__timecard-text">
+              <div class="dashboard__timecard-title">
+                <h3>Study</h3>
+                <button class="dashboard__card-btn" aria-label="More options">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dashboard__timecard-time">
+                <p class="dashboard__timecard-current">4hours</p>
+                <p class="dashboard__timecard-previous">Last Week - 7hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__timecard">
+            <div class="dashboard__icon exercise">
+              <img
+                src="/img/icon-exercise.svg"
+                alt=""
+                class="dashboard__icon-image-exercise"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="dashboard__timecard-text">
+              <div class="dashboard__timecard-title">
+                <h3>Exercise</h3>
+                <button class="dashboard__card-btn" aria-label="More options">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dashboard__timecard-time">
+                <p class="dashboard__timecard-current">4hours</p>
+                <p class="dashboard__timecard-previous">Last Week - 5hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__timecard">
+            <div class="dashboard__icon social">
+              <img
+                src="/img/icon-social.svg"
+                alt=""
+                class="dashboard__icon-image"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="dashboard__timecard-text">
+              <div class="dashboard__timecard-title">
+                <h3>Social</h3>
+                <button class="dashboard__card-btn" aria-label="More options">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dashboard__timecard-time">
+                <p class="dashboard__timecard-current">5hours</p>
+                <p class="dashboard__timecard-previous">Last Week - 10hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__timecard">
+            <div class="dashboard__icon selfcare">
+              <img
+                src="/img/icon-self-care.svg"
+                alt=""
+                class="dashboard__icon-image"
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="dashboard__timecard-text">
+              <div class="dashboard__timecard-title">
+                <h3>Self Care</h3>
+                <button class="dashboard__card-btn" aria-label="More options">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dashboard__timecard-time">
+                <p class="dashboard__timecard-current">2hours</p>
+                <p class="dashboard__timecard-previous">Last Week - 2hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Coder-Liz">Liz</a>.
+      </div>
+    </footer>
+  </body>
+</html>
